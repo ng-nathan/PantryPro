@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "846471492881",
+    "project_id": "pantrypro-a1-10",
+    "storage_bucket": "pantrypro-a1-10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846471492881:android:0acd1ecbb403f9773248b0",
+        "android_client_info": {
+          "package_name": "com.pantrypro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdXk9fYlbgOwMHaKpUBOsaxsvZ9LQtsiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

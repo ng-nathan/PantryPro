@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--when an icon in navigation bar is selected, its color changes to white. Otherwise, it's greyish green-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:color="@color/white"/>
+    <item
+        android:state_selected="false"
+        android:color="@color/greyishGreen"/>
+</selector>

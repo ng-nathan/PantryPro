@@ -1,0 +1,212 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".presentation.AddRecipeFragment">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".presentation.AddRecipeFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!--Title section-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/createTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:height="60dp"
+                    android:gravity="center"
+                    android:hint="e.g, Charming Cake"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/createImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_weight="4"
+                    android:contentDescription="Preview Food"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/baseline_add_photo" />
+
+                <ProgressBar
+                    android:id="@+id/createUploading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/greenPastel"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!--Cooking time section-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="20dp"
+                            android:text="Duration (in minutes)"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/createDuration"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="40dp"
+                            android:gravity="start|center_vertical"
+                            android:hint="e.g, 30 min"
+                            android:inputType="number"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!--Select type of foods-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="20dp"
+                            android:text="Type of food"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerFood"
+                            style="@style/SpinnerStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="40dp"
+                            android:gravity="start|center_vertical"
+                            android:hint="Select one type" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Ingredients"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/createIngredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:ems="10"
+                    android:gravity="start|center_vertical"
+                    android:hint="e.g, 1 tbsp of luck, 1/2 cup of charisma, etc."
+                    android:inputType="textMultiLine"
+                    android:maxLines="20"
+                    android:minHeight="60dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Instructions"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/createSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:ems="10"
+                    android:gravity="start|center_vertical"
+                    android:hint="e.g, Mix everything together and bake in 250°F for 20 min"
+                    android:inputType="textMultiLine"
+                    android:maxLines="20"
+                    android:minHeight="60dp"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/createRecipe"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Post your recipe"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/cancelCreate"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/darkRed"
+                        android:text="Cancel"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

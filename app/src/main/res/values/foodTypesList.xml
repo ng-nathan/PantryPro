@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="foodTypesList">
+        <item>Meal</item>
+        <item>Snack</item>
+        <item>Dessert</item>
+        <item>Beverage</item>
+    </string-array>
+
+</resources>
