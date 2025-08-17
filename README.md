@@ -6,7 +6,7 @@
 ## Overview
 Pantry Pro is an ultimate culinary companion, designed to effortlessly create, save and share recipes. Pantry Pro can also seamlessly track calories of these recipes as well as use them to plan meals for your upcoming days. Cooking has never been this smart, easy, and downright delicious!
 
-[*Visit our website*](https://nateng98.github.io/pantrypro-web/)
+[*Visit our website*](https://ng-nathan.github.io/pantrypro-web/)
 
 [Full Demo Video](https://www.youtube.com/watch?v=OQuEn1Bnnc0)
 
